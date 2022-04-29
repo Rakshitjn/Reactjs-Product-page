@@ -1,23 +1,62 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import NavigationBar from "./components/navbar";
+import BigPicture from "./components/DisplayPicture";
+
+const ProductData = {
+  colorOptions: [
+    {
+      styleName: "Black Strap",
+      imageUrl: "https://imgur.com/iOeUBV7.png",
+    },
+    {
+      styleName: "Red Strap",
+      imageUrl: "https://imgur.com/PTgQlim.png",
+    },
+    {
+      styleName: "Blue Strap",
+      imageUrl: "https://imgur.com/Mplj1YR.png",
+    },
+    {
+      styleName: "Purple Strap",
+      imageUrl: "https://imgur.com/xSIK4M8.png",
+    },
+  ],
+  featureList: ["Time", "Heart Rate"],
+};
+
+//In-App Components
+const HeadingData = () => {
+  return (
+    <div>
+      <h1>FitBit 19 - The Smartest Watch</h1>
+    </div>
+  );
+};
+
+const DetailsData = () => {
+  return (
+    <div>
+      <h3 style = {{color: "grey"}}>
+        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+        Lorem ipsum dolor Lorem ipsum dolor
+      </h3>
+    </div>
+  );
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavigationBar />
+      <div className="section">
+        <div>
+          <BigPicture />
+        </div>
+        <div className = "DataSection">
+          <HeadingData />
+          <DetailsData />
+        </div>
+      </div>
     </div>
   );
 }

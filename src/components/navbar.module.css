@@ -1,0 +1,9 @@
+.Navigation{
+    background-color: rgb(14, 14, 22);
+}
+
+.Navigation>img{
+    padding-top: 10px;
+    max-width: 10%;
+    max-height: auto;
+}
