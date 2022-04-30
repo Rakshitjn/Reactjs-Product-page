@@ -9,4 +9,4 @@ const BigPicture = () => {
   );
 };
 
-export default BigPicture;
+export default BigPicture
