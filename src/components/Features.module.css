@@ -16,3 +16,27 @@
 #Inactive{
     background-color: rgb(179, 177, 177);
 }
+
+.mount{
+    position: absolute;
+}
+#Heart{
+    top:270px;
+    left: 222px;
+    max-width: 10%;
+}
+
+#Time{
+    top:280px;
+    left: 231px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+#Hearttext{
+    color: white;
+    top:350px;
+    left: 258px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

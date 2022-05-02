@@ -1,12 +1,15 @@
 import React from "react";
 import styles from "./DisplayPicture.module.css";
 
-const BigPicture = () => {
+const BigPicture = (props) => {
   return (
-    <div className = {styles.BigPicture}>
-      <img src="https://imgur.com/iOeUBV7.png" alt="Display product" />
+    <div className={styles.BigPicture}>
+      <img
+        src={props.ImageUrl}
+        alt="Display product"
+      />
     </div>
   );
 };
 
-export default BigPicture
+export default BigPicture;
