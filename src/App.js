@@ -1,8 +1,8 @@
 import "./App.css";
-import NavigationBar from "./components/navbar";
-import BigPicture from "./components/DisplayPicture";
-import ColorGrids from "./components/ColorGrid";
-import FeaturesButton from "./components/Features";
+import NavigationBar from "./components/Navigation Bar/navbar.js";
+import BigPicture from "./components/Product Components/DisplayPicture";
+import ColorGrids from "./components/Product Components/ColorGrid";
+import FeaturesButton from "./components/Product Components/Features";
 import { Component } from "react";
 
 const data = [
